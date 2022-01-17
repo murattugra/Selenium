@@ -24,7 +24,8 @@ public class C05_NavigationMethods {
 //6. Sayfayi Refresh(yenile) yapalim
         driver.navigate().refresh();
 //8. Sayfayi kapatalim / Tum sayfalari kapatalim
-        driver.close();
+        driver.quit();// quit varsa acik olan tum sayfaari kapatir
+                        // close ise sadeec driverin  son bulundugu sayfayi kapatir
 
 
 
