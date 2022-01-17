@@ -11,9 +11,6 @@ public class C07_ManegeWindowSet {
 
 
 
-//5. Sayfanin sizin istediginiz konum ve boyuta geldigini test edin
-//8. Sayfayi kapatin
-
 
     public static void main(String[] args) {
 
@@ -28,8 +25,10 @@ public class C07_ManegeWindowSet {
         System.out.println(driver.manage().window().getSize());
         //4. Sayfanin konumunu ve boyutunu istediginiz sekilde ayarlayin
         driver.manage().window().setPosition(new Point(0,0));
-        driver.manage().window().setSize(new Dimension(400,500));
+        driver.manage().window().setSize(new Dimension(300,500));
 
+
+//5. Sayfanin sizin istediginiz konum ve boyuta geldigini test edin
         int xKordinati=driver.manage().window().getPosition().getX();
         int yKordinati=driver.manage().window().getPosition().getY();
         int genislik=driver.manage().window().getSize().getWidth();
@@ -40,6 +39,8 @@ public class C07_ManegeWindowSet {
         }else {
             System.out.println("Olceklendirme Testi FAIL");
         }
+
+//8. Sayfayi kapatin
 
         driver.close();
 
