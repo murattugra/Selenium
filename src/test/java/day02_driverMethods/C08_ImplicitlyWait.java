@@ -15,11 +15,12 @@ public class C08_ImplicitlyWait {
 
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();        // Bunlari en basta her zaman yazmak gerekir
+        //
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));  //  bunuda yaz hep
         // implicitly wait testimiz boyunca sayfa acilmasi ve element bulmasi konusunda driver 'in
         //bekleyecegi maximum sureyi belirler.
         //Bu sure icinde gorevi bitirir bitirmez , bir sonraki goreve gecer
-        //Bu sure icinde bitiremezse o zaman hata verir
+        //Bu sure icinde bitiremezse o zaman hata verir RTE
 
         // Bu sure mutlaka beklemesi gereken sure degildir  Tread.sleep deki gibi
 
