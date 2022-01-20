@@ -8,7 +8,7 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 
 import java.time.Duration;
 
-public class C05 {
+public class C05_RelativeLocators{
 
   // 1 ) https://www.diemol.com/selenium-4-demo/relative-locators-demo.html  adresine gidin
     //2 ) Berlin’i  3 farkli relative locator ile locate edin
