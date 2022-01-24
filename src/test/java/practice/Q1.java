@@ -46,9 +46,6 @@ public class Q1 {
 
 
 
-
-
-
 }
 
 
