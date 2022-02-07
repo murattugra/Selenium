@@ -16,18 +16,12 @@ public class Q4 {
 // Click on Calculate
 // Get the result
 // Print the result
-
-
     public static void main(String[] args) {
-
         System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
         driver.navigate().to(" https://testpages.herokuapp.com/styled/index.html");
-
-
         driver.findElement(By.id("calculatetest")).click();
         driver.findElement(By.id("number1")).sendKeys("5");
         driver.findElement(By.id("number2")).sendKeys("4");
@@ -36,12 +30,6 @@ public class Q4 {
         String sonucstr=sonuc.getText();
         System.out.println("sonuc "+sonucstr);
 
-
-
-
-
     }
-
-
 
 }
